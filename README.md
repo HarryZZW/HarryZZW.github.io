@@ -1,37 +1,50 @@
-# Zhengwei (Harrison) Zhang academic website
+# Zhengwei (Harrison) Zhang - Job Market Website
 
-This is a static, GitHub Pages-ready academic website for the job market.
+This is a static GitHub Pages website package. It is designed to be uploaded directly to the root of your `USERNAME.github.io` repository.
 
-## What's included
+## What is included
 
-- `index.html` - one-page academic website
-- `styles.css` - local stylesheet, no external dependencies
-- `assets/docs/CV_Zhengwei_Zhang_public.pdf` - public CV with phone number removed
-- `assets/docs/Job_Market_Paper_Zhengwei_Harrison_Zhang.pdf` - job market paper
-- `assets/docs/Research_Statement_Zhengwei_Zhang.pdf` - research statement
-- `404.html` - basic error page
-- `.nojekyll` - tells GitHub Pages to serve files as-is
-- `.gitignore` - helps avoid committing local secrets and temporary files
+- `index.html` - the main website page
+- `styles.css` - the UT Austin-inspired visual styling
+- `assets/docs/CV_Zhengwei_Zhang_public.pdf` - public CV only
+- `assets/img/profile.jpg` - temporary profile-image placeholder
+- `404.html`, `.nojekyll`, `.gitignore`, and `robots.txt`
 
-## Recommended GitHub Pages setup
+## What is intentionally not included
 
-1. Create a repository named `USERNAME.github.io`, replacing `USERNAME` with your GitHub username.
-2. Upload the files in this folder to the root of the repository.
-3. In the repository, go to **Settings > Pages**.
-4. Set the source to deploy from the `main` branch and the root folder `/`.
-5. Visit `https://USERNAME.github.io` after GitHub finishes publishing.
+The job market paper PDF and research statement PDF are not included in this version. The website still summarizes your research, but the manuscript and research statement cannot be downloaded from this package.
 
-## Security-minded setup notes
+Important: if you already uploaded the earlier package to GitHub, you should delete the old PDF files from your GitHub repository too. Removing links from `index.html` is not enough if the files are still present in `assets/docs/`.
 
-- Keep this site static: no contact forms, no databases, no server-side code, and no external JavaScript.
-- Use a strong unique GitHub password plus 2FA or passkeys.
-- Store recovery codes safely in a password manager.
-- Do not commit secrets, private data, API keys, raw datasets, unpublished confidential material, or SSH keys.
-- Avoid adding random GitHub Actions or third-party scripts. This package does not need GitHub Actions.
-- Use branch protection or repository rules for `main` after the site is published.
-- If you use a custom domain, verify the domain in GitHub before connecting it, and enforce HTTPS.
-- Review the PDF files before publishing. The included CV removes the phone number from the first page, but the site still publishes your academic email and institution.
+Old files to remove from GitHub if they exist:
 
-## Updating content
+- `assets/docs/Job_Market_Paper_Zhengwei_Harrison_Zhang.pdf`
+- `assets/docs/Research_Statement_Zhengwei_Zhang.pdf`
+- `assets/docs/Zhengwei_Harrison_Zhang_Job_Market_Paper.pdf`
+- `assets/docs/Zhengwei_Zhang_Research_Statement.pdf`
 
-Edit `index.html` directly. The site is intentionally simple so that you can review every line that gets published.
+## How to add your real profile photo
+
+1. Choose a professional headshot, ideally square, such as 800 x 800 pixels or larger.
+2. Rename it exactly: `profile.jpg`
+3. Replace the placeholder file here: `assets/img/profile.jpg`
+4. Re-upload or commit the changed file to GitHub.
+
+The website automatically crops the image to a square profile card, so a normal rectangular headshot will still work.
+
+## How to publish on GitHub Pages
+
+Upload the contents of this folder directly to the root of your `USERNAME.github.io` repository. When you open the repository, `index.html` should be visible immediately at the top level.
+
+Recommended Pages settings:
+
+- Source: Deploy from a branch
+- Branch: `main`
+- Folder: `/ (root)`
+
+## Safety notes
+
+- This site contains no JavaScript.
+- It uses no contact form, database, tracking scripts, analytics scripts, external fonts, or third-party assets.
+- The email address is written in an obfuscated format to reduce automated scraping.
+- Do not upload private drafts, datasets, passwords, API keys, `.env` files, or private notes to this repository.
