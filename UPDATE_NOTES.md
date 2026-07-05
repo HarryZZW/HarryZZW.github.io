@@ -1,9 +1,5 @@
-# Update notes
-
-This version updates the public contact email on the website contact section to:
-
-Harrison.Zhang@mccombs.utexas.edu
-
-The email is displayed as plain text and linked with `mailto:Harrison.Zhang@mccombs.utexas.edu`.
-
-The package still includes only the public CV PDF under `assets/docs/`. It does not include the job market paper PDF or research statement PDF.
+Version 5 updates:
+- Replaced the profile photo with the uploaded profile picture.
+- Redesigned the hero section to make the portrait the visual centerpiece.
+- Added a cleaner portrait frame, academic highlight cards, and a more cohesive UT-inspired layout.
+- Kept only the public CV as the downloadable document.
