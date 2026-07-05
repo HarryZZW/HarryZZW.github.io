@@ -46,5 +46,5 @@ Recommended Pages settings:
 
 - This site contains no JavaScript.
 - It uses no contact form, database, tracking scripts, analytics scripts, external fonts, or third-party assets.
-- The email address is written in an obfuscated format to reduce automated scraping.
+- The contact email is shown as Harrison.Zhang@mccombs.utexas.edu and linked with a mailto address.
 - Do not upload private drafts, datasets, passwords, API keys, `.env` files, or private notes to this repository.
