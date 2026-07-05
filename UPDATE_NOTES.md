@@ -1,5 +1,4 @@
-Version 5 updates:
-- Replaced the profile photo with the uploaded profile picture.
-- Redesigned the hero section to make the portrait the visual centerpiece.
-- Added a cleaner portrait frame, academic highlight cards, and a more cohesive UT-inspired layout.
-- Kept only the public CV as the downloadable document.
+Version 6 updates:
+- Redesigned the website to follow the uploaded reference art direction.
+- Kept a UT Austin-inspired palette, serif hero typography, a portrait card, and four overview cards.
+- Uses the uploaded profile picture and keeps only the public CV as a downloadable file.
