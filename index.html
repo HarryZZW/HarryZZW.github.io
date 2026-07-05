@@ -6,11 +6,12 @@
   <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'none'; object-src 'none'; base-uri 'self'; form-action 'none'; img-src 'self' data:; style-src 'self'; upgrade-insecure-requests">
   <meta name="referrer" content="strict-origin-when-cross-origin">
   <meta name="color-scheme" content="light">
-  <meta name="description" content="Zhengwei (Harrison) Zhang is a Ph.D. candidate in Quantitative Marketing at The University of Texas at Austin, McCombs School of Business.">
-  <meta property="og:title" content="Zhengwei (Harrison) Zhang">
-  <meta property="og:description" content="Ph.D. candidate in Quantitative Marketing at The University of Texas at Austin.">
+  <meta name="description" content="Harrison Zhang is a Ph.D. candidate in Quantitative Marketing at the McCombs School of Business, The University of Texas at Austin.">
+  <meta property="og:title" content="Harrison Zhang">
+  <meta property="og:description" content="Ph.D. candidate in Quantitative Marketing at the McCombs School of Business, The University of Texas at Austin.">
   <meta property="og:type" content="website">
-  <title>Zhengwei (Harrison) Zhang</title>
+  <meta property="og:image" content="assets/img/profile.jpg">
+  <title>Harrison Zhang</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -18,13 +19,15 @@
 
   <header class="site-header" id="top">
     <div class="container header-inner">
-      <a class="brand" href="#top" aria-label="Zhengwei Harrison Zhang home">
-        <svg class="brand-icon" viewBox="0 0 64 64" aria-hidden="true" focusable="false">
-          <path d="M32 6l5 6v9h5v8h4v29h-7V41H25v17h-7V29h4v-8h5v-9l5-6zm0 9a3 3 0 100 6 3 3 0 000-6zm-4 10h8v-6h-8v6zm-3 8v4h14v-4H25zm0 8v4h14v-4H25zm0 8v9h14v-9H25z" fill="currentColor"/>
+      <a class="brand" href="#top" aria-label="Harrison Zhang home">
+        <svg class="tower-logo" viewBox="0 0 64 64" aria-hidden="true" focusable="false">
+          <path d="M29.5 3.5h5v7.2l3.2 3.5v8.1h5.1v7.8h3.6v27.6h-7.1V40.5h-5.2v17.2h-4.2V40.5h-5.2v17.2h-7.1V30.1h3.6v-7.8h5.1v-8.1l3.2-3.5V3.5Z" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linejoin="round"/>
+          <circle cx="32" cy="19.1" r="2.9" fill="none" stroke="currentColor" stroke-width="2.4"/>
+          <path d="M26.2 30.1h11.6M26.2 35.9h11.6M13.4 57.7h37.2" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/>
         </svg>
       </a>
       <nav class="nav" aria-label="Primary navigation">
-        <a href="#about">About</a>
+        <a class="active" href="#about">About</a>
         <a href="#research">Research</a>
         <a href="#teaching">Teaching</a>
         <a href="#cv">CV</a>
@@ -34,200 +37,113 @@
   </header>
 
   <main id="main">
-    <section class="hero" id="about">
-      <div class="container hero-grid">
+    <section id="about" class="hero" aria-labelledby="hero-title">
+      <div class="campus-ghost" aria-hidden="true">
+        <svg viewBox="0 0 260 540" focusable="false">
+          <path class="tower-fill" d="M129 18 151 47v44h18v26h15v364h-38V260h-34v221H74V117h15V91h18V47l22-29Zm0 48a11 11 0 1 0 0 22 11 11 0 0 0 0-22Zm-18 51h36V97h-36v20Zm-12 42h60v17H99v-17Zm0 37h60v17H99v-17Zm0 37h60v17H99v-17Zm0 37h60v17H99v-17Zm0 37h60v17H99v-17Zm0 37h60v17H99v-17Z"/>
+          <path class="tree-fill" d="M32 426c11-33 59-39 74-8 15-34 62-26 68 8 28-18 71 2 72 39 1 39-36 57-71 48-18 24-58 22-75 0-29 12-75-6-76-43 0-18 6-32 8-44Z"/>
+        </svg>
+      </div>
+
+      <div class="container hero-inner">
         <div class="hero-copy">
           <p class="eyebrow">Quantitative Marketing</p>
-          <div class="accent-line" aria-hidden="true"></div>
-          <h1>Zhengwei <span>(Harrison)</span> Zhang</h1>
+          <span class="orange-rule" aria-hidden="true"></span>
+          <h1 id="hero-title">Harrison Zhang</h1>
           <p class="subtitle">Ph.D. Candidate in Quantitative Marketing,<br>McCombs School of Business,<br>The University of Texas at Austin</p>
-          <div class="accent-line small" aria-hidden="true"></div>
-          <p class="lead">I am a Ph.D. candidate in Quantitative Marketing at McCombs School of Business, The University of Texas at Austin. My research lies at the intersection of AI, marketing, and consumer behavior, with a focus on understanding how technology shapes decisions, preferences, and markets.</p>
-          <div class="button-row" aria-label="Primary actions">
-            <a class="button primary" href="assets/docs/CV_Zhengwei_Zhang_public.pdf">Download CV</a>
-            <a class="button" href="#contact">Contact</a>
+          <span class="orange-rule second" aria-hidden="true"></span>
+          <p class="intro">I am a Ph.D. candidate in Quantitative Marketing at McCombs School of Business, The University of Texas at Austin. My research lies at the intersection of AI, marketing, and consumer behavior, with a focus on understanding how technology shapes decisions, preferences, and markets.</p>
+          <div class="button-row">
+            <a class="button primary" href="assets/docs/CV_Zhengwei_Zhang_public.pdf" aria-label="Download CV PDF">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v11m0 0 4-4m-4 4-4-4M5 17v3h14v-3" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              Download CV
+            </a>
+            <a class="button secondary" href="#contact">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6h16v12H4zM4 7l8 6 8-6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              Contact
+            </a>
           </div>
         </div>
 
-        <div class="hero-visual" aria-label="Profile portrait">
-          <div class="portrait-card">
-            <img src="assets/img/profile.jpg" alt="Profile photo of Zhengwei (Harrison) Zhang" width="1254" height="1254">
-          </div>
-          <div class="tower-ghost" aria-hidden="true">
-            <svg viewBox="0 0 180 360" focusable="false" aria-hidden="true">
-              <path d="M90 10l14 18v24h12v18h10v278h-24V210H78v138H54V70h10V52h12V28L90 10zm0 29a7 7 0 100 14 7 7 0 000-14zm-10 30h20V54H80v15zm-8 22v12h36V91H72zm0 24v12h36v-12H72zm0 24v12h36v-12H72zm0 24v12h36v-12H72zm0 24v12h36v-12H72zm0 24v12h36v-12H72z" fill="currentColor"/>
-              <rect x="22" y="310" width="136" height="38" rx="2" fill="currentColor" opacity="0.45"/>
-            </svg>
-          </div>
-        </div>
+        <figure class="portrait-card">
+          <img src="assets/img/profile.jpg" alt="Profile photo of Harrison Zhang" width="1200" height="1200">
+        </figure>
       </div>
     </section>
 
-    <section class="overview">
-      <div class="container cards four">
-        <article class="card">
-          <div class="card-icon">⌬</div>
+    <section class="overview" aria-label="Website overview">
+      <div class="container card-grid">
+        <article class="tile" id="research">
+          <svg class="tile-icon" viewBox="0 0 48 48" aria-hidden="true"><path d="M19 5h10M21 5v13L10 39c-.9 1.7.3 3.7 2.2 3.7h23.6c1.9 0 3.1-2 2.2-3.7L27 18V5" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M16 33h16" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/></svg>
           <h2>Research</h2>
-          <div class="card-line" aria-hidden="true"></div>
-          <p>My research leverages econometrics, machine learning, and digital trace data to study how AI and emerging technologies shape consumer behavior and market dynamics.</p>
-          <a class="card-link" href="#research">Explore research</a>
+          <span class="card-rule" aria-hidden="true"></span>
+          <p>My research leverages econometrics, machine learning, and field/online experiments to study how digital technologies and AI influence consumer behavior and firm strategy.</p>
+          <a href="#research-detail">Explore research <span aria-hidden="true">→</span></a>
         </article>
 
-        <article class="card">
-          <div class="card-icon">▤</div>
+        <article class="tile" id="papers">
+          <svg class="tile-icon" viewBox="0 0 48 48" aria-hidden="true"><path d="M13 5h16l7 7v31H13z" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linejoin="round"/><path d="M29 5v8h7M19 23h14M19 30h14M19 37h9" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/></svg>
           <h2>Job Market Paper</h2>
-          <div class="card-line" aria-hidden="true"></div>
-          <p>My job market paper studies how the Tesla Model 3 reshaped online search attention and competitive comparison paths in the U.S. automobile market.</p>
-          <a class="card-link" href="#jmp">View overview</a>
+          <span class="card-rule" aria-hidden="true"></span>
+          <p>My job market paper studies how the Tesla Model 3 reshaped consumer attention and choice behaviors in digital information environments.</p>
+          <a href="#paper-detail">View overview <span aria-hidden="true">→</span></a>
         </article>
 
-        <article class="card">
-          <div class="card-icon">↗</div>
+        <article class="tile" id="work">
+          <svg class="tile-icon" viewBox="0 0 48 48" aria-hidden="true"><path d="M8 36 18 25l8 6 14-18" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/><circle cx="8" cy="36" r="3" fill="none" stroke="currentColor" stroke-width="2.5"/><circle cx="18" cy="25" r="3" fill="none" stroke="currentColor" stroke-width="2.5"/><circle cx="26" cy="31" r="3" fill="none" stroke="currentColor" stroke-width="2.5"/><circle cx="40" cy="13" r="3" fill="none" stroke="currentColor" stroke-width="2.5"/></svg>
           <h2>Work in Progress</h2>
-          <div class="card-line" aria-hidden="true"></div>
-          <p>Ongoing projects examine AI content moderation, platform governance, nonlinear dynamic factor models, and technology-mediated consumer learning.</p>
-          <a class="card-link" href="#wip">See projects</a>
+          <span class="card-rule" aria-hidden="true"></span>
+          <p>Ongoing projects examine topics such as algorithmic influence, personalization, and consumer learning in technology-mediated markets.</p>
+          <a href="#work-detail">See projects <span aria-hidden="true">→</span></a>
         </article>
 
-        <article class="card contact-card">
-          <div class="card-icon">✉</div>
+        <article class="tile contact-tile" id="contact">
+          <svg class="tile-icon" viewBox="0 0 48 48" aria-hidden="true"><path d="M7 12h34v24H7zM7 14l17 13 17-13" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
           <h2>Contact</h2>
-          <div class="card-line" aria-hidden="true"></div>
+          <span class="card-rule" aria-hidden="true"></span>
           <p>I am on the academic job market. Please feel free to reach out.</p>
-          <p class="email-line"><a href="mailto:Harrison.Zhang@mccombs.utexas.edu">Harrison.Zhang@mccombs.utexas.edu</a></p>
+          <span class="soft-divider" aria-hidden="true"></span>
+          <p class="email-line"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6h16v12H4zM4 7l8 6 8-6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg><a href="mailto:Harrison.Zhang@mccombs.utexas.edu">Harrison.Zhang@mccombs.utexas.edu</a></p>
         </article>
       </div>
     </section>
 
-    <section class="section" id="research">
-      <div class="container section-shell">
-        <div class="section-heading">
+    <section class="detail-section visually-open" aria-label="Research details">
+      <div class="container detail-grid">
+        <article id="research-detail" class="detail-card">
           <p class="eyebrow">Research agenda</p>
           <h2>Technology, attention, and responsible analytics in markets</h2>
-        </div>
-        <p class="section-intro">My work asks how new technologies change what consumers search for, which alternatives they compare, and how markets become organized around emerging categories. I use digital trace data, Bayesian models, and quantitative marketing methods to study market transformation before sales fully respond.</p>
-        <div class="research-grid">
-          <article class="paper-block">
-            <h3>Market formation</h3>
-            <p>I study how disruptive product entry reorganizes category-level and product-level attention, especially in emerging technology markets such as electric vehicles.</p>
-          </article>
-          <article class="paper-block">
-            <h3>Marketing analytics</h3>
-            <p>I develop and apply Bayesian and machine-learning-based tools for search, advertising, sales, forecasting, and diffusion analysis.</p>
-          </article>
-          <article class="paper-block">
-            <h3>AI platform governance</h3>
-            <p>I examine how AI content moderation and platform policy affect engagement, retention, subscription demand, trust, and platform value.</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section alt" id="jmp">
-      <div class="container section-shell narrow">
-        <div class="section-heading">
+          <p>My work asks how new technologies change what consumers search for, which alternatives they compare, and how markets become organized around emerging categories. I use digital trace data and quantitative models to study early market transformation before sales fully respond.</p>
+        </article>
+        <article id="paper-detail" class="detail-card">
           <p class="eyebrow">Job market paper</p>
           <h2>Capturing the Impact of Tesla</h2>
-        </div>
-        <article class="paper-detail">
-          <p class="paper-status">Dynamic Factor Analysis Using Online Search, Advertising and Sales</p>
-          <p class="authors">Zhengwei (Harrison) Zhang, Jason A. Duan, and Garrett P. Sonnier</p>
-          <p>This paper examines how the introduction of the Tesla Model 3 reshaped consumer attention in the U.S. automobile market. Using weekly vehicle-level data from 2014 to 2021 that combine Google Trends search indices, Vivvix advertising expenditures, and Ward’s vehicle sales, I develop a Bayesian dynamic latent-factor model of search spillovers across the EV topic, Tesla Model 3, non-Tesla electric vehicles, and incumbent compact competitors.</p>
-          <p>The results show that the Model 3’s clearest empirical footprint appears in the search system rather than in immediate sales or advertising responses. After Model 3 entry, EV-topic attention became more persistent, Tesla Model 3 search became a major driver of broader EV interest, and the competitive search environment became more organized around EV-centered comparison paths.</p>
-          <p class="note">Manuscript available upon request.</p>
+          <p>This project studies how the introduction of the Tesla Model 3 reshaped online search, advertising, and sales dynamics in the U.S. automobile market. Manuscript available upon request.</p>
         </article>
-      </div>
-    </section>
-
-    <section class="section" id="wip">
-      <div class="container section-shell narrow">
-        <div class="section-heading">
+        <article id="work-detail" class="detail-card">
           <p class="eyebrow">Work in progress</p>
           <h2>Research pipeline</h2>
-        </div>
-        <div class="stack">
-          <article class="paper-detail compact">
-            <h3>When Safety Constrains Creativity: Evidence of AI Content Moderation on User Engagement</h3>
-            <p class="authors">With Runyang Shu and Yixing Chen</p>
-            <p>In partnership with a large technology firm operating a commercial AI content-generation platform, this project studies how tightening content moderation affects user activity, retention, subscription behavior, and monetization outcomes.</p>
-          </article>
-          <article class="paper-detail compact">
-            <h3>Linear and Nonlinear Dynamic Factor Models for Spillover Effects and Forecasting of Electric Vehicle Diffusion</h3>
-            <p class="authors">With Jason Duan and Garrett Sonnier</p>
-            <p>This project extends my job market paper by combining interpretable dynamic factor models with neural-network state dynamics to model nonlinear responses, regime shifts, spillover effects, and EV adoption trajectories.</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section dark" id="teaching">
-      <div class="container split-two">
-        <div>
-          <p class="eyebrow light">Teaching</p>
+          <p>Ongoing work studies AI content moderation, user engagement, subscription behavior, electric vehicle diffusion, and nonlinear dynamic factor models.</p>
+        </article>
+        <article id="teaching" class="detail-card">
+          <p class="eyebrow">Teaching</p>
           <h2>Principles of Marketing</h2>
-          <p>Instructor, The University of Texas at Austin, Spring 2024.</p>
-          <p>Overall instructor rating: 4.5/5.</p>
-        </div>
-        <div>
-          <p class="eyebrow light">Selected presentations</p>
-          <ul class="clean-list">
-            <li>AMA Sheth Foundation Doctoral Consortium, 2022</li>
-            <li>UH Marketing Doctoral Symposium, 2024</li>
-            <li>Bass FORMS Conference, 2024</li>
-            <li>Marketing Science Conference, 2024</li>
-            <li>ISMS Doctoral Consortium, 2024</li>
-            <li>Quantitative Marketing and Economics Conference, 2024</li>
-            <li>Marketing Dynamics Conference, 2025</li>
-          </ul>
-        </div>
-      </div>
-    </section>
-
-    <section class="section" id="cv">
-      <div class="container split-two">
-        <div>
-          <p class="eyebrow">Education</p>
+          <p>Instructor, The University of Texas at Austin, Spring 2024. Overall instructor rating: 4.5/5.</p>
+        </article>
+        <article id="cv" class="detail-card">
+          <p class="eyebrow">CV</p>
           <h2>Background</h2>
-          <ul class="timeline">
-            <li><span>2021–Present</span> Ph.D. in Quantitative Marketing, The University of Texas at Austin</li>
-            <li><span>2018–2019</span> M.S. in Finance, Johns Hopkins University</li>
-            <li><span>2017–2018</span> M.S. in Finance, Lancaster University</li>
-            <li><span>2013–2017</span> B.M.S. in Accounting, Zhongnan University of Economics and Law</li>
-          </ul>
-          <div class="button-row compact-row">
-            <a class="button primary" href="assets/docs/CV_Zhengwei_Zhang_public.pdf">Download full CV</a>
-          </div>
-        </div>
-        <div>
-          <p class="eyebrow">Skills & awards</p>
-          <h2>Research toolkit</h2>
-          <ul class="tag-list" aria-label="Skills">
-            <li>R</li>
-            <li>Python</li>
-            <li>MATLAB</li>
-            <li>Stan</li>
-            <li>Bayesian inference</li>
-            <li>Field experiments</li>
-          </ul>
-          <p class="awards"><strong>Selected honors:</strong> Recruitment Graduate School College Fellowship, McCombs School Fellowship, and Bonham Eugene and Dora Memorial Fellowship.</p>
-        </div>
-      </div>
-    </section>
-
-    <section class="section contact-section" id="contact">
-      <div class="container narrow center">
-        <p class="eyebrow">Contact</p>
-        <h2>Get in touch</h2>
-        <p>Department of Marketing, McCombs School of Business<br>The University of Texas at Austin · Austin, TX</p>
-        <p class="email-big"><a href="mailto:Harrison.Zhang@mccombs.utexas.edu">Harrison.Zhang@mccombs.utexas.edu</a></p>
-        <p class="privacy-note">This public page does not use contact forms, trackers, analytics scripts, external fonts, or third-party JavaScript.</p>
+          <p>Download the full CV for education, presentations, awards, skills, and dissertation committee information.</p>
+          <a class="button primary small-button" href="assets/docs/CV_Zhengwei_Zhang_public.pdf">Download full CV</a>
+        </article>
       </div>
     </section>
   </main>
 
   <footer class="site-footer">
     <div class="container footer-inner">
-      <p>© 2026 Zhengwei (Harrison) Zhang. All rights reserved.</p>
+      <p>© 2026 Harrison Zhang. All rights reserved.</p>
+      <span aria-hidden="true"></span>
       <p>McCombs School of Business, The University of Texas at Austin</p>
     </div>
   </footer>
